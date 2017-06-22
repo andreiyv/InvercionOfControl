@@ -9,6 +9,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+// И это первый вариант инъекции зависимости - через конструктор.
+// Используется она тогда, когда фонарик не может существовать без батарейки.
+// Представь себе такой одноразовый фонарик, в который вмонтирована батарейка и доступа к ней нет. Села батарейка - выкидываешь фонарик.
+// Это называется композицией, когда части объекта неотъемлемы от него.
+
 public class TestBaterry {
 		
 	class DisposableBattery implements Battery{
