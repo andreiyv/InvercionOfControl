@@ -1,7 +1,7 @@
 package constructor.battery;
 
 public class ChinaBattery implements Battery {
-
+// батарейка разряжается от последовательных вызовов ее метода getVoltage
 	private int power = 5; 
 	
 	@Override

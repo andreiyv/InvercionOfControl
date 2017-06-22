@@ -1,12 +1,13 @@
 package constructor;
 
-import static org.junit.Assert.*;
 import constructor.battery.Battery;
 import constructor.battery.ChinaBattery;
 import constructor.flashlight.Flashlight;
 import constructor.flashlight.SomeFlashlight;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class TestBaterry {
 		
@@ -27,7 +28,7 @@ public class TestBaterry {
 	@Test
 	public void testDischargeNewBattery() {						
 		Battery battery = new DisposableBattery();
-		
+// вставляется через конструктор какая-то батарейка. Внутри фонарика все равно какая это будет батарейка, лишь бы соответствовала интерфейсу
 		Flashlight flashlight = new SomeFlashlight(battery);		
 		assertFalse(flashlight.isShines());
 		
